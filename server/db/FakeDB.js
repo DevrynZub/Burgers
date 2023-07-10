@@ -1,9 +1,9 @@
+import { Fries } from "../models/Fries"
 
-export const burger = [
+export const burgers = [
   {
     id: 1,
     name: 'Double Double McCheeseCurd',
-    cheese: Cheddar,
     lettuce: false,
     tomatoes: false,
     bacon: true,
@@ -13,7 +13,6 @@ export const burger = [
   {
     id: 2,
     name: 'The Time Stopper',
-    cheese: provolone,
     lettuce: true,
     tomatoes: true,
     bacon: true,
@@ -22,3 +21,19 @@ export const burger = [
   },
 ]
 
+export const fries = [
+  new Fries({
+    id: 1,
+    name: 'Loaded Cheese Fries',
+    price: 4.75,
+    meat: true,
+    cheese: true
+  }),
+  new Fries({
+    id: 2,
+    name: 'Regular Fries',
+    price: 1.75,
+    meat: false,
+    cheese: false
+  }),
+]
